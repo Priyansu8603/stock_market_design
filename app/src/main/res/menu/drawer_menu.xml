@@ -1,53 +1,103 @@
-<?xml version="1.0" encoding="utf-8"?>
+
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn="nav_view">
+    tools:showIn="navigation_view">
 
-    <group>
-
-
+    <group android:checkableBehavior="single">
         <item
-            android:id="@+id/credit"
+            android:id="@+id/nav_credit"
             android:icon="@drawable/baseline_currency_rupee_24"
-            android:title="Credit" />
+            android:title="Credit"
+            android:padding="10dp" />
+
         <item
-            android:id="@+id/savedPost"
-            android:icon="@drawable/baseline_save_alt_24"
-            android:title="Saved Posts" />
-        <item
-            android:id="@+id/purchases"
+            android:id="@+id/nav_purchases"
             android:icon="@drawable/baseline_shopping_bag_24"
-            android:title="Purchases" />
+            android:title="Purchases"
+            android:padding="10dp" />
+
         <item
-            android:id="@+id/profile"
-            android:icon="@drawable/baseline_person_24"
-            android:title="Profile" />
+            android:id="@+id/nav_savedPost"
+            android:icon="@drawable/baseline_save_alt_24"
+            android:title="Saved Posts"
+            android:padding="10dp" />
+
+        <item
+            android:id="@+id/nav_notification"
+            android:title="Notifications"
+            android:icon="@drawable/baseline_circle_notification"
+            android:padding="10dp" />
+
+
     </group>
+
+
+
+    <item android:title="Comunicate">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_contactus"
+                    android:title="Contact us"
+                    android:icon="@drawable/baseline_chat_24"
+
+                    android:padding="10dp" />
+
+                <item
+                    android:id="@+id/nav_rate"
+                    android:title="Rate us"
+                    android:icon="@drawable/baseline_rate_review_24"
+
+                    android:padding="10dp" />
+
+                <item
+                    android:id="@+id/nav_about"
+                    android:title="About us"
+                    android:icon="@drawable/baseline_help_24"
+
+                    android:padding="10dp" />
+
+
+
+
+            </group>
+
+        </menu>
+
+    </item>
 
     <item android:title="Profile">
 
         <menu>
 
+            <group android:checkableBehavior="single">
 
-            <item
-                android:id="@+id/share"
-                android:icon="@drawable/baseline_share_24"
-                android:title="Share" />
-            <item
-                android:id="@+id/Chat"
-                android:icon="@drawable/baseline_chat_24"
-                android:title="Chat With Team" />
-            <item
-                android:id="@+id/rateUs"
-                android:icon="@drawable/baseline_rate_review_24"
-                android:title="Rate Us" />
-            <item
-                android:id="@+id/freqAsk"
-                android:icon="@drawable/baseline_question_mark_24"
-                android:title="Frequently Asked Questions" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:title="Logout"
+                    android:icon="@drawable/baseline_logout_24"
+                    android:padding="10dp" />
+
+                <item
+                    android:id="@+id/nav_settings"
+                    android:title="Settings"
+                    android:icon="@drawable/baseline_settings_24"
+
+                    android:padding="10dp" />
+
+
+
+            </group>
 
         </menu>
+
     </item>
 
 
 </menu>
+
+
+      
