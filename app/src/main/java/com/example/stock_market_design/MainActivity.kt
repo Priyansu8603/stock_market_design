@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
 
         supportActionBar?.hide()
 
-        setSupportActionBar(findViewById(R.id.toolbar))
+        setSupportActionBar(binding.toolbar)
 
         drawerlayout = findViewById(R.id.drawer_layout)
         supportActionBar?.setDisplayHomeAsUpEnabled(false);
@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
                     drawerlayout.closeDrawer(GravityCompat.START)
                     return@setNavigationItemSelectedListener true
 
-                    true
+
                 }
                 R.id.nav_purchases -> {
                     // Handle profile item click
