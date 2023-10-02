@@ -10,8 +10,8 @@
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:enableOnBackInvokedCallback="true"
-        android:label=""
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="Stock Market"
         android:supportsRtl="true"
         android:theme="@style/Base.Theme.Stock_market_design"
         tools:targetApi="tiramisu">

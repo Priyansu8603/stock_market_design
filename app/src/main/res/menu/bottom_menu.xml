@@ -3,11 +3,13 @@
 
     <item
         android:layout_width="wrap_content"
+        android:id="@+id/bottom_home"
         android:icon="@drawable/baseline_home_24"
         android:layout_height="wrap_content"
         android:title="Home" />
     <item
         android:layout_width="wrap_content"
+        android:id="@+id/bottom_PaperTrading"
         android:icon="@drawable/chart_stock_svgrepo_com"
         android:layout_height="wrap_content"
         android:title="Paper Trading" />
@@ -15,9 +17,11 @@
         android:layout_width="wrap_content"
         android:icon="@drawable/chart_upward_svgrepo_com"
         android:layout_height="wrap_content"
+        android:id="@+id/bottom_stocks"
         android:title="Stocks" />
     <item
         android:icon="@drawable/post_"
+        android:id="@+id/bottom_Posts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:title="Posts" />

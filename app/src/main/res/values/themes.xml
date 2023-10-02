@@ -1,7 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Stock_market_design" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+    <style name="Base.Theme.Stock_market_design" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#E61B1B1B</item>
+        <item name="colorPrimaryVariant">#D1D3D5</item>
+        <item name="android:statusBarColor">#D1D3D5</item>
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 </resources>
