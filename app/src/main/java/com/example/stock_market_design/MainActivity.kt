@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() ,NavigationView.OnNavigationItemSelecte
         supportActionBar?.hide()
         setSupportActionBar(binding.toolbar)
 
+
         val toggle = ActionBarDrawerToggle(this,binding.drawerLayout,binding.toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_close)
         binding.drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
@@ -35,7 +36,6 @@ class MainActivity : AppCompatActivity() ,NavigationView.OnNavigationItemSelecte
         binding.navigationDrawer.setNavigationItemSelectedListener(this)
 
 
-        binding.bottomNavigation.background =null
 
         binding.bottomNavigation.setOnItemSelectedListener { item ->
             when(item.itemId){
