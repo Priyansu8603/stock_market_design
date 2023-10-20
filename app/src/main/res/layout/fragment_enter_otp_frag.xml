@@ -3,14 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="?android:attr/actionBarSize"
-    tools:context=".ui.fragments.bottom_stocks_frag">
+    tools:context=".ui.fragments.enter_otp_frag">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
-        android:textSize="25sp"
         android:layout_height="match_parent"
-        android:text="this is stocks fragment" />
+        android:text="@string/hello_blank_fragment" />
 
 </FrameLayout>

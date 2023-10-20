@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/get_started_frag">
+
+    <fragment
+        android:id="@+id/get_started_frag"
+        android:name="com.example.stock_market_design.ui.fragments.get_started_frag"
+        android:label="get_started_frag" >
+        <action
+            android:id="@+id/action_get_started_frag_to_mobile_login_frag"
+            app:destination="@id/mobile_login_frag" />
+    </fragment>
+    <fragment
+        android:id="@+id/mobile_login_frag"
+        android:name="com.example.stock_market_design.ui.fragments.mobile_login_frag"
+        android:label="fragment_mobile_login_frag"
+        tools:layout="@layout/fragment_mobile_login_frag" >
+        <action
+            android:id="@+id/action_mobile_login_frag_to_continue_with_number_frag"
+            app:destination="@id/continue_with_number_frag" />
+        <action
+            android:id="@+id/action_mobile_login_frag_to_continue_with_Email_frag"
+            app:destination="@id/continue_with_Email_frag" />
+    </fragment>
+    <fragment
+        android:id="@+id/continue_with_Email_frag"
+        android:name="com.example.stock_market_design.ui.fragments.continue_with_Email_frag"
+        android:label="fragment_continue_with__email_frag"
+        tools:layout="@layout/fragment_continue_with__email_frag" >
+        <action
+            android:id="@+id/action_continue_with_Email_frag_to_register_frag"
+            app:destination="@id/register_frag" />
+    </fragment>
+    <fragment
+        android:id="@+id/continue_with_number_frag"
+        android:name="com.example.stock_market_design.ui.fragments.continue_with_number_frag"
+        android:label="fragment_continue_with_number_frag"
+        tools:layout="@layout/fragment_continue_with_number_frag" >
+        <action
+            android:id="@+id/action_continue_with_number_frag_to_enter_otp_frag"
+            app:destination="@id/enter_otp_frag" />
+    </fragment>
+    <fragment
+        android:id="@+id/register_frag"
+        android:name="com.example.stock_market_design.ui.fragments.register_frag"
+        android:label="fragment_register_frag"
+        tools:layout="@layout/fragment_register_frag" >
+        <action
+            android:id="@+id/action_register_frag_to_mobile_login_frag"
+            app:destination="@id/mobile_login_frag" />
+    </fragment>
+    <fragment
+        android:id="@+id/enter_otp_frag"
+        android:name="com.example.stock_market_design.ui.fragments.enter_otp_frag"
+        android:label="fragment_enter_otp_frag"
+        tools:layout="@layout/fragment_enter_otp_frag" />
+</navigation>

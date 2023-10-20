@@ -1,4 +1,4 @@
-package com.example.stock_market_design
+package com.example.stock_market_design.ui.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,11 +6,17 @@ import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
-import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
+import com.example.stock_market_design.R
 import com.example.stock_market_design.databinding.ActivityMainBinding
+import com.example.stock_market_design.ui.fragments.bottom_home_frag
+import com.example.stock_market_design.ui.fragments.bottom_paperTrading_frag
+import com.example.stock_market_design.ui.fragments.bottom_posts_frag
+import com.example.stock_market_design.ui.fragments.bottom_stocks_frag
+import com.example.stock_market_design.ui.fragments.navDrawer_credit
+import com.example.stock_market_design.ui.fragments.navDrawer_purchases
 import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity() ,NavigationView.OnNavigationItemSelectedListener {
@@ -28,9 +34,15 @@ class MainActivity : AppCompatActivity() ,NavigationView.OnNavigationItemSelecte
         setSupportActionBar(binding.toolbar)
 
 
-        val toggle = ActionBarDrawerToggle(this,binding.drawerLayout,binding.toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_close)
+        val toggle = ActionBarDrawerToggle(this,binding.drawerLayout,binding.toolbar,
+            R.string.navigation_drawer_open,
+            R.string.navigation_drawer_close
+        )
         binding.drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
+        supportActionBar?.setHomeButtonEnabled(true)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setHomeAsUpIndicator(R.drawable.men)
 
 
         binding.navigationDrawer.setNavigationItemSelectedListener(this)

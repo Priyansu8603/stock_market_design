@@ -5,19 +5,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.View.GONE
-import android.widget.EditText
 import android.widget.ProgressBar
-import android.widget.TextView
 import android.widget.Toast
-import androidx.lifecycle.viewmodel.viewModelFactory
 import com.example.stock_market_design.databinding.ActivityContwithnumberBinding
+import com.example.stock_market_design.ui.activities.MainActivity
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.PhoneAuthOptions
-import com.google.firebase.auth.PhoneAuthProvider
 import com.hbb20.CountryCodePicker
-import org.w3c.dom.Text
-import java.util.concurrent.TimeUnit
-import java.util.logging.Logger.global
 
 class contwithnumber : AppCompatActivity() {
     private lateinit var binding:ActivityContwithnumberBinding
@@ -38,7 +31,7 @@ class contwithnumber : AppCompatActivity() {
         progressbar.visibility = GONE
 
         if (auth.currentUser!=null){
-            startActivity(Intent(this@contwithnumber,MainActivity::class.java))
+            startActivity(Intent(this@contwithnumber, MainActivity::class.java))
             finish()
         }
         else{

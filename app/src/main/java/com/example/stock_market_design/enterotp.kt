@@ -11,6 +11,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.stock_market_design.databinding.ActivityEnterotpBinding
+import com.example.stock_market_design.ui.activities.MainActivity
 import com.google.firebase.FirebaseException
 import com.google.firebase.FirebaseTooManyRequestsException
 import com.google.firebase.auth.FirebaseAuth
@@ -19,7 +20,6 @@ import com.google.firebase.auth.FirebaseAuthMissingActivityForRecaptchaException
 import com.google.firebase.auth.PhoneAuthCredential
 import com.google.firebase.auth.PhoneAuthOptions
 import com.google.firebase.auth.PhoneAuthProvider
-import com.google.firebase.auth.PhoneAuthProvider.OnVerificationStateChangedCallbacks
 import java.util.concurrent.TimeUnit
 
 class enterotp : AppCompatActivity() {
@@ -54,7 +54,7 @@ class enterotp : AppCompatActivity() {
             .setCallbacks(object : PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
                 override fun onVerificationCompleted(p0: PhoneAuthCredential) {
                     Log.d(TAG, "onVerificationCompleted: $p0")
-                    startActivity(Intent(this@enterotp,MainActivity::class.java))
+                    startActivity(Intent(this@enterotp, MainActivity::class.java))
                     dialog.dismiss()
                 }
 

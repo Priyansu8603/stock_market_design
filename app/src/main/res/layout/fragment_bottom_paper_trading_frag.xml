@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginTop="?android:attr/actionBarSize"
-    tools:context=".bottom_paperTrading_frag">
+    tools:context=".ui.fragments.bottom_paperTrading_frag">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView

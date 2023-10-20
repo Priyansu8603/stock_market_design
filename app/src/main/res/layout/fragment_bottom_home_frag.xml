@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".bottom_home_frag">
+    tools:context=".ui.fragments.bottom_home_frag">
 
     <!-- TODO: Update blank fragment layout -->
     <ScrollView
@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:background="#BFD1D3D5"
             android:orientation="vertical"
-            tools:context=".MainActivity">
+            tools:context=".ui.activities.MainActivity">
 
             <com.google.android.material.appbar.AppBarLayout
                 android:layout_width="match_parent"
@@ -34,55 +34,7 @@
                     android:gravity="center"
                     android:orientation="horizontal">
 
-                    <androidx.appcompat.widget.Toolbar
-                        android:id="@+id/toolbar"
-                        android:layout_width="wrap_content"
-                        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-                        android:layout_height="wrap_content">
 
-                        <de.hdodenhof.circleimageview.CircleImageView
-                            android:id="@+id/profile_image"
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            android:layout_marginStart="0dp"
-                            android:clickable="true"
-                            android:focusable="true"
-                            android:paddingBottom="3dp"
-                            android:src="@drawable/men"
-                            app:civ_border_color="#FF000000"
-                            app:civ_border_width="2dp" />
-
-                        <TextView
-                            android:id="@+id/textView"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
-                            android:fontFamily="@font/poppinmedium"
-                            android:padding="6dp"
-                            android:text="Hello,"
-                            android:textColor="@color/black"
-                            android:textSize="26sp" />
-
-                        <TextView
-                            android:id="@+id/textView2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="4dp"
-                            android:fontFamily="@font/poppinmedium"
-                            android:text="Jonathan!"
-                            android:textColor="@color/black"
-                            android:textSize="26sp"
-                            android:textStyle="bold" />
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="50dp"
-                            android:paddingTop="0dp"
-                            android:paddingEnd="5dp"
-                            android:src="@drawable/baseline_circle_notification" />
-
-                    </androidx.appcompat.widget.Toolbar>
 
 
                 </LinearLayout>
